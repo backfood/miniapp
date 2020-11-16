@@ -1,0 +1,47 @@
+<!--pages/input/input.wxml-->
+<!-- <view>
+  <view class="item">
+    <view class="label">用户名</view>
+    <input class="input" type="text" bindinput="input" data-name="name"  focus="{{foucs}}"/>
+  </view>
+  <view class="item">
+    <view class="label">密码</view>
+    <input class="input" type="text" password bindinput="input" data-name="password" />
+  </view>
+  <view class="item">
+    <view class="label">验证码</view>
+    <input class="input" type="text" bindinput="input" data-name="code" />
+  </view>
+  
+</view> -->
+
+
+<view class="focusform" catchtap="stopBubble">
+  <input type="text" value="{{tempValue}}" bindinput="input" class="foucsinput" focus="{{foucs}}" />
+  <view class="item" catchtap="getfocus" data-item="0">
+    <view class="label">
+      用户名
+    </view>
+    <view class="mock-input">{{form.account}}<view wx:if="{{cursor=='0'}}" class="cursor"></view>
+    </view>
+  </view>
+  <view class="item" catchtap="getfocus" data-item="1">
+    <view class="label">
+      密码
+    </view>
+    <view class="mock-input">{{form.pwd}}<view wx:if="{{cursor=='1'}}" class="cursor"></view>
+    </view>
+  </view>
+  <view class="item" catchtap="getfocus" data-item="2">
+    <view class="label">
+      验证码
+    </view>
+    <view class="mock-input">{{form.captcha}}<view wx:if="{{cursor=='2'}}" class="cursor"></view>
+    </view>
+  </view>
+</view>
+<!-- <view class="flex">
+  <view class="button" bindtap="autofocus">
+    获取与失去焦点
+  </view>
+</view> -->

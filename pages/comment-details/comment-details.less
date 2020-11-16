@@ -1,0 +1,183 @@
+.page {
+    padding: 0 30rpx 0 30rpx;
+}
+
+.comment-item {
+    border-top: 1rpx solid #eeeeee;
+    border-bottom: 1rpx solid #eeeeee;
+    padding: 30rpx 0;
+
+    .user {
+        .left {
+            float: left;
+            margin-right: 20rpx;
+
+            .head-portrait {
+                width: 70rpx;
+                height: 70rpx;
+                border-radius: 50%;
+            }
+        }
+
+        .right {
+            float: left;
+
+            .name {
+
+                color: #3A3B3C;
+                font-size: 28rpx;
+            }
+
+            .comment-good-time {
+
+                font-size: 22rpx;
+                color: #9C9C9D;
+
+                .time {
+                    margin-right: 20rpx;
+                }
+            }
+        }
+    }
+
+    .comment-text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        font-size: 28rpx;
+        line-height: 40rpx;
+        color: #3A3B3C;
+    }
+
+    .comment-pic {
+        display: flex;
+        justify-content: space-between;
+
+        .pic {
+            width: 226rpx;
+            height: 226rpx;
+        }
+    }
+
+    .support-comment {
+        margin-right: -30rpx;
+
+        .option {
+            float: right;
+            margin-right: 30rpx;
+
+            .i {
+                width: 24rpx;
+                height: 24rpx;
+                margin-right: 10rpx;
+            }
+
+            .t {
+                color: #9C9C9D;
+                font-size: 24rpx;
+            }
+        }
+    }
+
+    .append-comment {
+        font-size: 24rpx;
+        color: #9C9C9D;
+        background-color: #F7F6F8;
+        padding: 10rpx 30rpx 10rpx 30rpx;
+
+        .text {
+            color: #3A3B3C;
+        }
+
+        .all {
+            float: right;
+        }
+    }
+
+
+}
+
+.comment-single {
+    margin-top: 30rpx;
+
+    .header {
+        font-size: 32rpx;
+    }
+
+    .body {
+        .item {
+            padding: 20rpx 0;
+            border-bottom: 1rpx solid #EEEEEE;
+            color: #9C9C9D;
+            display: flex;
+            font-size: 24rpx;
+
+            .pic {
+                width: 70rpx;
+                height: 70rpx;
+                border-radius: 50%;
+                margin-right: 20rpx;
+            }
+
+            .name {
+                color: #3A3B3C;
+                float: left;
+            }
+
+            .time {
+                float: right;
+            }
+        }
+    }
+}
+
+
+
+.evaluate {
+    width: 100%;
+    padding: 18rpx 20rpx 14rpx 20rpx;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+
+    .input {
+        width: 480rpx;
+        height: 80rpx;
+        background-color: #ffffff;
+        color: #9C9C9D;
+        padding-left: 20rpx;
+        font-size: 28rpx;
+    }
+
+    .expression {
+        width: 55rpx;
+        height: 55rpx;
+    }
+
+    .btn {
+        width: 135rpx;
+        height: 80rpx;
+        line-height: 80rpx;
+        text-align: center;
+        color: #ffffff;
+        background-color: #44D7B6;
+        border: none;
+        margin: none;
+
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

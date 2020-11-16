@@ -1,0 +1,49 @@
+.container {
+  padding: 30rpx;
+}
+.message {
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #EEEEEE;
+  color: #9C9C9D;
+}
+.message .pic-box {
+  float: left;
+  margin-right: 20rpx;
+}
+.message .pic-box .pic {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}
+.message .content {
+  width: 578rpx;
+  float: left;
+}
+.message .content .msg-from {
+  height: 48rpx;
+  line-height: 48rpx;
+}
+.message .content .msg-from .name {
+  float: left;
+  color: #3A3B3C;
+  font-size: 34rpx;
+  margin-bottom: 4rpx;
+  margin-bottom: 0;
+}
+.message .content .msg-from .time {
+  float: right;
+  font-size: 24rpx;
+}
+.message .content .msg-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

@@ -1,0 +1,3 @@
+<view class="{{show?'':'close'}}" bindtap="open">
+  <view wx:for="{{arr}}" wx:key="index">{{item}}</view>
+</view>

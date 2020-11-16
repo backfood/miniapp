@@ -1,0 +1,144 @@
+.page {
+  padding: 0 30rpx 0 30rpx;
+}
+.comment-item {
+  border-top: 1rpx solid #eeeeee;
+  border-bottom: 1rpx solid #eeeeee;
+  padding: 30rpx 0;
+}
+.comment-item .user .left {
+  float: left;
+  margin-right: 20rpx;
+}
+.comment-item .user .left .head-portrait {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.comment-item .user .right {
+  float: left;
+}
+.comment-item .user .right .name {
+  color: #3A3B3C;
+  font-size: 28rpx;
+}
+.comment-item .user .right .comment-good-time {
+  font-size: 22rpx;
+  color: #9C9C9D;
+}
+.comment-item .user .right .comment-good-time .time {
+  margin-right: 20rpx;
+}
+.comment-item .comment-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #3A3B3C;
+}
+.comment-item .comment-pic {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-item .comment-pic .pic {
+  width: 226rpx;
+  height: 226rpx;
+}
+.comment-item .support-comment {
+  margin-right: -30rpx;
+}
+.comment-item .support-comment .option {
+  float: right;
+  margin-right: 30rpx;
+}
+.comment-item .support-comment .option .i {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 10rpx;
+}
+.comment-item .support-comment .option .t {
+  color: #9C9C9D;
+  font-size: 24rpx;
+}
+.comment-item .append-comment {
+  font-size: 24rpx;
+  color: #9C9C9D;
+  background-color: #F7F6F8;
+  padding: 10rpx 30rpx 10rpx 30rpx;
+}
+.comment-item .append-comment .text {
+  color: #3A3B3C;
+}
+.comment-item .append-comment .all {
+  float: right;
+}
+.comment-single {
+  margin-top: 30rpx;
+}
+.comment-single .header {
+  font-size: 32rpx;
+}
+.comment-single .body .item {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #EEEEEE;
+  color: #9C9C9D;
+  display: flex;
+  font-size: 24rpx;
+}
+.comment-single .body .item .pic {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.comment-single .body .item .name {
+  color: #3A3B3C;
+  float: left;
+}
+.comment-single .body .item .time {
+  float: right;
+}
+.evaluate {
+  width: 100%;
+  padding: 18rpx 20rpx 14rpx 20rpx;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+.evaluate .input {
+  width: 480rpx;
+  height: 80rpx;
+  background-color: #ffffff;
+  color: #9C9C9D;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+}
+.evaluate .expression {
+  width: 55rpx;
+  height: 55rpx;
+}
+.evaluate .btn {
+  width: 135rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #ffffff;
+  background-color: #44D7B6;
+  border: none;
+  margin: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

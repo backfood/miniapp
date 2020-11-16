@@ -1,0 +1,71 @@
+<!-- <view class="intro"> -->
+<!-- <van-button type="default">默认按钮</van-button>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button type="info">信息按钮</van-button>
+    <van-button type="danger" bindtap="sendRequest">危险按钮</van-button> -->
+<!-- <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName"></open-data> -->
+<!-- 需要使用 button 来授权登录 -->
+<!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+        授权登录
+    </button>
+    <view wx:else>请升级微信版本</view> -->
+<!-- <view class="" hover-class="none" hover-stop-propagation="false">
+        <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+        <button type="primary" bindtap="takePhoto">拍照</button>
+        <view>预览</view>
+        <image mode="widthFix" src="{{src}}"></image>
+    </view> -->
+<!-- <view class="" hover-class="none" hover-stop-propagation="false">
+        <button bindtap="roterto">跳转到另一个页面</button>
+    </view> -->
+<!-- <view class="box">
+        <view class="grid">
+            <view class="grid-1">1</view>
+            <view class="grid-2">2</view>
+            <view class="grid-3">3</view>
+            <view class="grid-4">4</view>
+            <view class="grid-5">5</view>
+            <view class="grid-6">6</view>
+            <view class="grid-7">7</view>
+        </view>
+    </view> -->
+<!-- <view>
+        <canvas class="canvas-code" canvas-id="myQrcode" style="background:#fff;width: 200px;height: 200px;" />
+    </view> -->
+<!-- <view class="price-info">
+        <view class="header">价格说明</view>
+        <view class="info-body">
+            <view class="item">
+                <text class="titlt">单独购买价：</text>
+                <text class="info">是您单独购买商品的价格。是您单独购买商品的价格。是您单独购买商品的价格。是您单独购买商品的价格。是您单独购买商品的价格。是您单独购买商品的价格。</text>
+            </view>
+            <view class="item">
+                <text class="titlt">发起拼单价：</text>
+                <text class="info">是您拼单购买商品的价格。</text>
+            </view>
+            <view class="item">
+                <text class="titlt">划线价：</text>
+                <text class="info">
+                可能是商品的专柜价、吊牌价，零售价指导价或者该商品曾经展示过的销售价等，并非商品的
+                <text class="titlt">“原价”</text>
+                ，仅供您参考
+                </text>
+            </view>
+            <view class="item">
+                <text class="titlt">特别提示：</text>
+                <text class="info">
+                实际的成交价可能因您使用优惠券等发生变化，最终以订单结算页的价格为准。若商家单独对价格进行说明，以商家的表诉为准。
+                </text>
+            </view>
+        </view>
+    </view> -->
+<!-- </view> -->
+<!-- <view class="content">
+    <canvas class="fill-image" canvas-id="fillImage"></canvas>
+    <canvas class="fill-image" canvas-id="sub" style="width:100rpx;height:100rpx;background: #E02020"></canvas>
+    <button plain="true" bind:tap="saveImg">保存</button>
+</view> -->
+<view>
+<view wx:for="{{longList}}" class="long-item">{{item}}</view>
+</view>

@@ -1,0 +1,17 @@
+<!-- pages/comment/comment.wxml -->
+<view class="page">
+    <view class="header clearfix">
+        <view class="item {{select=='1'?'active':''}}" data-num="1" bindtap="changeTabs">
+            全部{{comment.all}}
+        </view>
+        <view class="item {{select=='2'?'active':''}}" data-num="2" bindtap="changeTabs">
+            有图{{comment.havePic}}
+        </view>
+        <view class="item {{select=='3'?'active':''}}" data-num="3" bindtap="changeTabs">
+            追加{{comment.append}}
+        </view>
+    </view>
+    <view class="body">
+        <comment comment="{{comment}}" islist="{{false}}"></comment>
+    </view>
+</view>

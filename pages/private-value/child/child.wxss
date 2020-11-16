@@ -1,0 +1,5 @@
+/* pages/private-value/child/child.wxss */
+.close{
+  height: 40rpx;
+  overflow: hidden;
+}

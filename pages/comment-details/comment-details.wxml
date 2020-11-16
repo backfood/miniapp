@@ -1,0 +1,73 @@
+<view class="container">
+    <view class="comment-item">
+        <view class="user clearfix">
+            <view class="left">
+                <image src="{{picUrl}}" mode="aspectFill" lazy-load="true" class="head-portrait"></image>
+            </view>
+            <view class="right">
+                <view class="name">柏尔蒙</view>
+                <view class="comment-good-time">
+                    <text class="time">2020-09-21</text>
+                    <text class="good">型号：OPPOk5洗洗睡</text>
+                </view>
+            </view>
+        </view>
+        <view class="comment-text">
+            已经装上了，手机壳挺漂亮的，也很有质感，不错用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属机壳挺漂亮的，也很有质感，不错用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属机壳挺漂亮的，也很有质感，不错用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+        </view>
+        <view class="comment-pic">
+            <image src="/static/images/timg.jpg" class="pic"></image>
+            <image src="/static/images/timg.jpg" class="pic"></image>
+            <image src="/static/images/timg.jpg" class="pic"></image>
+        </view>
+        <view class="support-comment clearfix">
+            <view class="option">
+                <image class="i" src="/static/images/i_comment.png" mode="aspectFill" lazy-load="true"></image>
+                <text class="t">评论</text>
+            </view>
+            <view class="option" bindtap="changeSupportStatus">
+                <image class="i" src="/static/images/i_support_{{supportStatus}}.png" mode="aspectFill" lazy-load="true"></image>
+                <text class="t">赞</text>
+            </view>
+        </view>
+        <view class="append-comment" wx:if="{{islist}}">
+            <view>2020-09-5</view>
+            <view>
+                关雎雎:
+                <text class="text">非常好，很喜欢 我不会再来的</text>
+            </view>
+            <view class="clearfix">
+                <view class="all">
+                    查看全部
+                    <text class="num">255</text>
+                    条评论
+                    <text>></text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{!islist}}" class="comment-single">
+        <view class="header">全部评论（1条）</view>
+        <view class="body">
+            <view class="item">
+                <view>
+                    <image class="pic" src="{{picUrl}}" mode="aspectFill" lazy-load="false"></image>
+                </view>
+                <view>
+                    <view class="clearfix">
+                        <view class="name">梁赞敏</view>
+                        <view class="time">2032-56-28</view>
+                    </view>
+                    <view>看起来很好看 店主真的很漂亮 我以后还会经常来的 当然 这是不可能的</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="evaluate">
+    <input class="input" type="text" placeholder="热情回复，文明用语" />
+    <view>
+        <image class="expression" src="/static/images/expression.png" mode="aspectFill" lazy-load="false"></image>
+    </view>
+    <view class="btn">发送</view>
+</view>

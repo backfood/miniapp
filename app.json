@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message-details/message-details",
+    "pages/message-content/message-content",
+    "pages/message/message",
+    "pages/comment/comment",
+    "pages/cart/cart",
+    "pages/home/home",
+    "pages/user/index",
+    "pages/input/input",
+    "pages/private-value/private-value"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ababab",
+    "selectedColor": "#07c160",
+    "backgroundColor": "#eeeeee",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/message-details/message-details",
+        "text": "home",
+        "iconPath": "static/icon/IE.png",
+        "selectedIconPath": "static/icon/IE-c.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "首页",
+        "iconPath": "static/icon/cao.png",
+        "selectedIconPath": "static/icon/cao-c.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "home",
+        "iconPath": "static/icon/IE.png",
+        "selectedIconPath": "static/icon/IE-c.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

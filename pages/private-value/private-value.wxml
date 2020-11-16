@@ -1,0 +1,1 @@
+<list list="{{item}}" wx:for="{{arr}}" wx:key="index"></list>

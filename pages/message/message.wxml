@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="message clearfix">
+        <view class="pic-box">
+            <image class="pic" src="{{imgSrc}}" mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <view class="content">
+            <view class="msg-from clearfix" hover-class="none" hover-stop-propagation="false">
+                <view class="name">叶青橙</view>
+                <view class="time">2020-09-23</view>
+            </view>
+            <view class="msg-text" hover-class="none" hover-stop-propagation="false">
+                您好，请问有什么是你能帮到我的吗？如果不可以的的话，一会我再问一次
+            </view>
+        </view>
+    </view>
+</view>
