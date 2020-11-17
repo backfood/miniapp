@@ -9,7 +9,8 @@
     "pages/home/home",
     "pages/user/index",
     "pages/input/input",
-    "pages/private-value/private-value"
+    "pages/private-value/private-value",
+    "pages/eventcatch/eventcatch"
   ],
   "permission": {
     "scope.userLocation": {

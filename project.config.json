@@ -66,6 +66,12 @@
         {
           "name": "pages/private-value/private-value",
           "pathName": "pages/private-value/private-value",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/eventcatch/eventcatch",
+          "pathName": "pages/eventcatch/eventcatch",
           "scene": null
         }
       ]
