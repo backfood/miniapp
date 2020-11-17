@@ -58,7 +58,6 @@ Page({
   },
   stopBubble() {
     let that = this;
-    console.log("执行了冒泡")
     clearInterval(that.data.timer)
     this.setData({
       cursor: -1
@@ -77,18 +76,14 @@ Page({
       this.cursorSwitch(item)
     })
     if (item == "0") {
-      console.log("设置了账户")
-
       this.setData({
         tempValue: this.data.form.account
       })
     } else if (item == "1") {
-      console.log("设置了密码")
       this.setData({
         tempValue: this.data.form.pwd
       })
     } else {
-      console.log("设置了验证码")
       this.setData({
         tempValue: this.data.form.captcha
       })
