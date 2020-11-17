@@ -2,9 +2,12 @@
 /***
  * 设置光标的聚焦与否 是为了弹出键盘
  * bug 
+ *  如果不加入hold-keyboard 在模拟器上可以聚焦 
+ *  但在手机上点击两次还是会隐藏键盘
+ *  
  * 
  */
-
+const pwdModel = "*"
 
 
 Page({
@@ -21,6 +24,7 @@ Page({
     form: {
       account: "",
       pwd: "",
+      encodePWD: "",
       captcha: ""
     }
   },
@@ -29,7 +33,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   input(e) {
-    console.log(e)
+    // console.log(e)
     let {
       foucsItem,
     } = this.data
@@ -43,7 +47,8 @@ Page({
       })
     } else if (foucsItem == "1") {
       this.setData({
-        ["form.pwd"]: value
+        ["form.pwd"]: value,
+        ["form.encodePWD"]: value.length ? pwdModel.padStart(value.length, "*") : ""
       })
     } else {
       this.setData({
@@ -53,6 +58,7 @@ Page({
   },
   stopBubble() {
     let that = this;
+    console.log("执行了冒泡")
     clearInterval(that.data.timer)
     this.setData({
       cursor: -1
@@ -62,6 +68,7 @@ Page({
     let {
       item
     } = e.currentTarget.dataset
+    console.log(this.data.foucs)
     this.setData({
       cursor: item,
       foucsItem: item,
@@ -70,14 +77,18 @@ Page({
       this.cursorSwitch(item)
     })
     if (item == "0") {
+      console.log("设置了账户")
+
       this.setData({
         tempValue: this.data.form.account
       })
     } else if (item == "1") {
+      console.log("设置了密码")
       this.setData({
         tempValue: this.data.form.pwd
       })
     } else {
+      console.log("设置了验证码")
       this.setData({
         tempValue: this.data.form.captcha
       })
