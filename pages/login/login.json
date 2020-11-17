@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "account": "./account/account",
+        "quick": "./quick/quick"
+    }
+}

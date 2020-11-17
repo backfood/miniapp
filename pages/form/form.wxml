@@ -1,0 +1,4 @@
+<private-form labelwidth="{{150}}" form="{{form}}">
+  <p-input value="{{form.pwd}}" name="pwd" label="{{'密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码'}}" type="password" bind:focus="setname">
+  </p-input>
+</private-form>

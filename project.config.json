@@ -72,6 +72,18 @@
         {
           "name": "pages/eventcatch/eventcatch",
           "pathName": "pages/eventcatch/eventcatch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/form/form",
+          "pathName": "pages/form/form",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
           "scene": null
         }
       ]

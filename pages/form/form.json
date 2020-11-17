@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "private-form": "../private-form/p-form/p-form",
+    "p-input":"../private-form/p-input/p-input"
+  }
+}

@@ -1,0 +1,13 @@
+<view class=" item" catchtap="getfocus" data-item="{{inputItem}}">
+  <view class="label" style="width:{{width}}rpx">
+    <text decode="{{decode}}">{{label}}</text>
+  </view>
+  <view>
+    <slot naem="before"></slot>
+  </view>
+  <view class="mock-input">{{value}}<view wx:if="{{cursor==inputItem}}" class="cursor"></view>
+  </view>
+  <view>
+    <slot naem="after"></slot>
+  </view>
+</view>

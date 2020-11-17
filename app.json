@@ -10,7 +10,11 @@
     "pages/user/index",
     "pages/input/input",
     "pages/private-value/private-value",
-    "pages/eventcatch/eventcatch"
+    "pages/eventcatch/eventcatch",
+    "pages/form/form",
+    "pages/login/login",
+    "pages/login/account/account",
+    "pages/login/quick/quick"
   ],
   "permission": {
     "scope.userLocation": {

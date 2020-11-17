@@ -1,0 +1,16 @@
+<view class="container">
+    <view class="nav">
+        <view data-active="0" bindtap="switchActive" class="nav {{activeNav=='0'?'active':'de-active'}}">
+            账户密码登录
+        </view>
+        <view data-active="1" bindtap="switchActive" class="nav {{activeNav=='1'?'active':'de-active'}}">
+            账户密码登录
+        </view>
+    </view>
+    <view wx:if="{{activeNav=='0'}}">
+        <account></account>
+    </view>
+    <view wx:if="{{activeNav=='1'}}">
+        <account></account>
+    </view>
+</view>
